@@ -13,7 +13,7 @@ class TagSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    {
+    {/*
         $tags = Tag::factory(20)->create();
         $articles = Article::all();
         foreach ($articles as $article){
@@ -22,6 +22,6 @@ class TagSeeder extends Seeder
             foreach ($randTags as $tag){
                 $article->tags()->attach($tag);
             }
-        }
+        }*/
     }
 }

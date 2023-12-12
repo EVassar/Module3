@@ -7,7 +7,7 @@
             Admin
         </summary>
         <ul class="p-2 z-20 bg-base-100">
-            <li><a href="{{route('articles.index')}}">Articles</a></li>
+            <li><a href="{{route('articles.index')}}">Burgers</a></li>
         </ul>
     </details>
 </li>

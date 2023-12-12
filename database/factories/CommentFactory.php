@@ -24,12 +24,12 @@ class CommentFactory extends Factory
         if(rand(0,9) !== 0){
             $updated = $created;
         }
-        return [
+        return [/*
             'body' => fake()->sentences(3, true),
             'article_id' => Article::inRandomOrder()->first()->id,
             'user_id' => User::inRandomOrder()->first()->id,
             'created_at' => $created,
             'updated_at' => $updated,
-        ];
+        */];
     }
 }

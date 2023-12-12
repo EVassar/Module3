@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Article extends Model
 {
     use HasFactory, SoftDeletes;
-    protected $fillable = ['title', 'body'];
+    protected $fillable = ['title', 'body', 'rating', 'price', 'vegetarian', 'vegan', 'glu'];
 
     protected function snippet(): Attribute {
         return Attribute::get(function (){
@@ -29,7 +29,6 @@ class Article extends Model
     public function likes(){
         return $this->hasMany(Like::class);
     }
-
     public function tags(){
         return $this->belongsToMany(Tag::class);
     }

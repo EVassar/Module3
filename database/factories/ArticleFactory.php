@@ -28,12 +28,12 @@ class ArticleFactory extends Factory
         }
 
         return [
-            'title' => fake()->sentence,
+            /*'title' => fake()->sentence,
             'body' => fake()->paragraphs(3, true),
             'created_at' => $created,
             'updated_at' => $updated,
             'deleted_at' => $deleted,
-            'user_id' => User::inRandomOrder()->first()->id
+            'user_id' => User::inRandomOrder()->first()->id*/
         ];
     }
 }

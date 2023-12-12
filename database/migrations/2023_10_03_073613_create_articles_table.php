@@ -16,6 +16,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
+            $table->integer('rating');
+            $table->integer('vegan');
+            $table->integer('vegetarian');
+            $table->integer('glu');
+            $table->float('price');
 
 //            $table->unsignedBigInteger('user_id');
 //            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
